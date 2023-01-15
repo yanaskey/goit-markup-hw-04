@@ -158,6 +158,7 @@ img {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -390,7 +391,7 @@ img {
   background-color: var(--footer-logo-color);
   color: var(--accent-logo-color);
 
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1, 5;
   letter-spacing: 0.04em;
@@ -409,6 +410,7 @@ img {
 .filter-button:focus {
   background-color: var(--color-move-change);
   color: var(--accent-white-color);
+  border-color: var(--color-move-change);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -421,12 +423,22 @@ img {
 }
 
 .item-list-card {
-  border: 1px solid var(--footer-text-color);
-  border-top: none;
-  width: 360px;
-  padding-bottom: 32px;
   margin-right: 24px;
   margin-bottom: 48px;
+}
+
+.card-border {
+  padding-top: 28px;
+  padding-bottom: 32px;
+  border: 1px solid var(--footer-text-color);
+  border-top: transparent;
+}
+
+.item-list-card:focus,
+.item-list-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  width: 360px;
 }
 
 .item-list-card:nth-child(3n) {
@@ -442,7 +454,6 @@ img {
 }
 
 .section-item.work {
-  margin-top: 28px;
   margin-bottom: 8px;
 }
 
