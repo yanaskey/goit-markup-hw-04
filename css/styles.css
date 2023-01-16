@@ -154,8 +154,12 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpg);
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1440px;
@@ -192,9 +196,6 @@ img {
 .button:hover,
 .buton:focus {
   background-color: var(--color-move-change);
-}
-
-.hero .container {
 }
 
 /* Main principles */
